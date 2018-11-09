@@ -8,29 +8,6 @@
 
 import UIKit
 
-extension UIViewController {
-    
-    func presentDetail(_ viewControllerToPresent: UIViewController) {
-        let transition = CATransition()
-        transition.duration = 1
-        transition.type = CATransitionType.moveIn
-        transition.subtype = CATransitionSubtype.fromTop
-        self.view.window?.layer.add(transition, forKey: kCATransition)
-        
-        present(viewControllerToPresent, animated: false)
-    }
-    
-    func dismissDetail() {
-        let transition = CATransition()
-        transition.duration = 1
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromBottom
-        self.view.window?.layer.add(transition, forKey: kCATransition)
-        
-        dismiss(animated: false)
-    }
-}
-
 
 /// presentのアニメーション
 class CustomPresentAnimator: NSObject, UIViewControllerAnimatedTransitioning {
@@ -46,7 +23,7 @@ class CustomPresentAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let toView = transitionContext.view(forKey: .to)!
         
         container.addSubview(toView)
-        toView.frame.origin = CGPoint(x: 0, y: -toView.frame.height)
+        toView.frame = CGRect(x: 0, y: -UIScreen.main.bounds.height,width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         
         UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut, animations: {
             toView.frame.origin = CGPoint(x: 0, y: 0)
@@ -73,7 +50,7 @@ class CustomDismissAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         fromView.frame.origin = .zero
         
         UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
-            fromView.frame.origin = CGPoint(x: 0, y: -fromView.frame.height)
+            fromView.frame.origin = CGPoint(x: 0, y: -UIScreen.main.bounds.height)
         }, completion: { _ in
             fromView.removeFromSuperview()
             transitionContext.completeTransition(true)
