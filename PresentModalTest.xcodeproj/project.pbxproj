@@ -12,6 +12,9 @@
 		5641459721930A2C00C5618A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5641459521930A2C00C5618A /* Main.storyboard */; };
 		5641459921930A2F00C5618A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5641459821930A2F00C5618A /* Assets.xcassets */; };
 		5641459C21930A2F00C5618A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5641459A21930A2F00C5618A /* LaunchScreen.storyboard */; };
+		564145A521930A8C00C5618A /* NextVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564145A321930A8C00C5618A /* NextVCL.swift */; };
+		564145A621930A8C00C5618A /* NextVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564145A421930A8C00C5618A /* NextVCL.xib */; };
+		564145A821930B9E00C5618A /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564145A721930B9E00C5618A /* Animator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5641459821930A2F00C5618A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5641459B21930A2F00C5618A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5641459D21930A2F00C5618A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564145A321930A8C00C5618A /* NextVCL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextVCL.swift; sourceTree = "<group>"; };
+		564145A421930A8C00C5618A /* NextVCL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextVCL.xib; sourceTree = "<group>"; };
+		564145A721930B9E00C5618A /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				5641459821930A2F00C5618A /* Assets.xcassets */,
 				5641459A21930A2F00C5618A /* LaunchScreen.storyboard */,
 				5641459D21930A2F00C5618A /* Info.plist */,
+				564145A321930A8C00C5618A /* NextVCL.swift */,
+				564145A421930A8C00C5618A /* NextVCL.xib */,
+				564145A721930B9E00C5618A /* Animator.swift */,
 			);
 			path = PresentModalTest;
 			sourceTree = "<group>";
@@ -122,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564145A621930A8C00C5618A /* NextVCL.xib in Resources */,
 				5641459C21930A2F00C5618A /* LaunchScreen.storyboard in Resources */,
 				5641459921930A2F00C5618A /* Assets.xcassets in Resources */,
 				5641459721930A2C00C5618A /* Main.storyboard in Resources */,
@@ -135,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564145A821930B9E00C5618A /* Animator.swift in Sources */,
+				564145A521930A8C00C5618A /* NextVCL.swift in Sources */,
 				5641459421930A2C00C5618A /* ViewController.swift in Sources */,
 				5641459221930A2C00C5618A /* AppDelegate.swift in Sources */,
 			);
