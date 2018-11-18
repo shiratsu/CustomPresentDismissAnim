@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TestFramework
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        UDWrapper.setString(key: "test", value: "teststest")
         
     }
 

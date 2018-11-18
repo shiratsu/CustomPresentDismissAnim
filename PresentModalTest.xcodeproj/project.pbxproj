@@ -15,7 +15,18 @@
 		564145A521930A8C00C5618A /* NextVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564145A321930A8C00C5618A /* NextVCL.swift */; };
 		564145A621930A8C00C5618A /* NextVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564145A421930A8C00C5618A /* NextVCL.xib */; };
 		564145A821930B9E00C5618A /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564145A721930B9E00C5618A /* Animator.swift */; };
+		5644687921A1C7FD00291960 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5644687821A1C7F500291960 /* TestFramework.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5644687721A1C7F500291960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5644687321A1C7F400291960 /* TestFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56446854219F7B9400291960;
+			remoteInfo = TestFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5641458E21930A2C00C5618A /* PresentModalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentModalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +39,8 @@
 		564145A321930A8C00C5618A /* NextVCL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextVCL.swift; sourceTree = "<group>"; };
 		564145A421930A8C00C5618A /* NextVCL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextVCL.xib; sourceTree = "<group>"; };
 		564145A721930B9E00C5618A /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		5644686821A13A5F00291960 /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestFramework.framework; path = "../../Library/Developer/Xcode/DerivedData/TestFramework-ffomgncesfmnkacfyxyphumqbudn/Build/Products/Debug-iphonesimulator/TestFramework.framework"; sourceTree = "<group>"; };
+		5644687321A1C7F400291960 /* TestFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestFramework.xcodeproj; path = TestFramework/TestFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5644687921A1C7FD00291960 /* TestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +58,10 @@
 		5641458521930A2C00C5618A = {
 			isa = PBXGroup;
 			children = (
+				5644687321A1C7F400291960 /* TestFramework.xcodeproj */,
 				5641459021930A2C00C5618A /* PresentModalTest */,
 				5641458F21930A2C00C5618A /* Products */,
+				5644686721A13A5F00291960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,22 @@
 				564145A721930B9E00C5618A /* Animator.swift */,
 			);
 			path = PresentModalTest;
+			sourceTree = "<group>";
+		};
+		5644686721A13A5F00291960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5644686821A13A5F00291960 /* TestFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5644687421A1C7F400291960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5644687821A1C7F500291960 /* TestFramework.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,12 +151,28 @@
 			mainGroup = 5641458521930A2C00C5618A;
 			productRefGroup = 5641458F21930A2C00C5618A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5644687421A1C7F400291960 /* Products */;
+					ProjectRef = 5644687321A1C7F400291960 /* TestFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5641458D21930A2C00C5618A /* PresentModalTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5644687821A1C7F500291960 /* TestFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TestFramework.framework;
+			remoteRef = 5644687721A1C7F500291960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5641458C21930A2C00C5618A /* Resources */ = {
@@ -296,6 +344,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S56GZ64EWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PresentModalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +366,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S56GZ64EWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PresentModalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
