@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         UDWrapper.setString(key: "test", value: "teststest")
-        
+        UDWrapper.setSwiftArray(key: "test", value: ["test","aaa"])
     }
 
     override func viewDidAppear(_ animated: Bool) {
